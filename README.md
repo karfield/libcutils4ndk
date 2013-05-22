@@ -1,4 +1,4 @@
 libcutils4ndk
 =============
 
-libcutils is NOT part of NDK! This project will make it to be.
+libcutils(or libsysutils) is NOT part of NDK! This project will make it to be.
