@@ -140,9 +140,7 @@ endif # !arm
 
 LOCAL_C_INCLUDES := $(libcutils_c_includes) $(KERNEL_HEADERS) $(LOCAL_PATH)/../include/
 LOCAL_STATIC_LIBRARIES := liblog_static
-LOCAL_CFLAGS += $(targetSmpFlag)
-LOCAL_CFLAGS += -DHAVE_ANDROID_OS -DHAVE_PTHREADS -DHAVE_SYS_SOCKET_H \
-				-DHAVE_SYS_UIO_H
+LOCAL_CFLAGS += $(targetSmpFlag) $(CUTILS_CFLAGS)
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
